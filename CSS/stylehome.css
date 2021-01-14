@@ -1,0 +1,107 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+        font-family: "Segoe UI";
+    }
+    
+    .header {
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: white;
+        padding: 20px 60px 20px 150px;
+    }
+    
+    .pint {
+        background-image: url("../img/picture.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 660px;
+    }
+    
+    .name {
+        color: white;
+    }
+    
+    #banner {
+        padding-top: 400px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #banner p {
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+    
+    .ali {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    li {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .coloring {
+        background-color: #dcdcdc;
+        padding-top: 10px;
+    }
+    
+    .rest {
+        text-align: left;
+        max-width: 700px;
+        width: 100%;
+        text-align: left;
+        line-height: 1.8;
+        font-size: 1.8rem;
+        padding: 50px;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .guga {
+        border-radius: 50%;
+        height: 13rem;
+        width: 13rem;
+    }
+    
+    .centrali {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .skills {
+        width: 400px;
+    }
+    
+    .habilidade-dupla {
+        padding: 0 20px;
+        width: 400px;
+    }
+    
+    .soft {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .mb {
+        text-align: left;
+        line-height: 1.8;
+        font-size: 1.8rem;
+        max-width: 700px;
+        width: 100%;
+    }
