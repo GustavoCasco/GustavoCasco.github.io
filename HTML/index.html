@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
 </head>
 
 <body>
@@ -26,8 +27,12 @@
                     <a href="#conhecimento">
                         <li className="menu-link">Skills</li>
                     </a>
-
-                    <li className="menu-link">Projetos</li>
+                    <a href="#projeto">
+                        <li className="menu-link">Projetos</li>
+                    </a>
+                    <a href="#projeto">
+                        <li className="menu-link">Contato</li>
+                    </a>
                 </ul>
                 <section id="banner">
 
@@ -39,6 +44,8 @@
     </header>
     <main>
 
+
+        <!-- section que contem informações e style de sobre nós -->
         <section class="coloring">
             <h2 id="sobre">Sobre </h2>
             <div class="ali">
@@ -48,11 +55,15 @@
                     Gosto de experimentar coisas novas, lido bem com desafios e trabalho sub pressão. Nas horas vagas gosto de jogar futebol competindo ou então com os amigos, curto jogar jogos (como: fifa, call of duty, fortnite e etc.), me aprofundar
                     mais em conhecimento que envolve bolsa de valores e também me lido muito bem quando o assunto é cozinhar, talvez um dos hobbies mais prazeroso que tenho.
                 </p>
+
             </div>
         </section>
+        <!-- END SECTION -->
 
 
-        <h2 id="conhecimento">Hards Skills </h2>
+
+        <!-- knowledge section start -->
+        <h2 id="conhecimento">Hard Skills </h2>
         <div class="centrali">
 
             <section class="skills">
@@ -120,26 +131,76 @@
             </section>
 
         </div>
-        <h2>Soft Skills</h2>
         <section class="soft">
             <div class="mb">
-                <p>Possuo qualificações como: Proatividade, boa comunicação, trabalho em equipe, apaixonado por encontrar soluções para os problemas, criatividade, empatia</p>
+                <h2>Soft Skills</h2>
+                <p class="softskills">Possuo qualificações como: Proatividade, boa comunicação, trabalho em equipe, apaixonado por encontrar soluções para os problemas, criatividade, empatia</p>
 
             </div>
         </section>
-
-        <section>
-            <h2>Projetos</h2>
+        <!-- END SECTTION -->
 
 
+        <!-- start project -->
+        <h2 id="projeto">Projetos</h2>
+        <section class="project">
+
+            <div class="coluna">
+                <div><br>
+                    <p class="pi carddata">2019</p><br>
+                    <div class="cool">
+                        <a target="_blank" href="https://github.com/GustavoCasco/Senai---Desenvolvimento-de-sistemas/tree/main/1%C2%B0%20Semestre/RoletopMVC"><img id="2019" class="img" src="../img/roletop.PNG " alt=" " width="100% "></a>
+                        <p class="rest">
+                            Primeiro projeto academico feito junto com a instituição escola SENAI de informatica, onde foi utlizado o ASP.NET MVC com armazenamento local através do csv. O objeto do projeto foi automatizar o agendamento de eventos.
+                        </p>
+                    </div>
+                </div><br>
+
+                <div class="as">
+                    <div class="hebert">
+                        <div class="hs"><br>
+                            <p class="pi carddata22">2020</p>
+                        </div><br>
+                        <div class="cool">
+                            <p class="rest">
+                                Projeto academico conclusivo, o intuito do site era automatizar e aumentar a empregabilidade do senai, aonde é possivel a empresa divulgar vaga e o candidato se inscrever. Para essa aplicação foi utilizado ReactJs, ReactNative, Api REST FULL(c#), SQL
+                                SERVER.
+                            </p>
+                            <a href="https://github.com/GustavoCasco/Projeto-Conclusivo-Senai"><img class="img22" src="../img/ProVagas.PNG" alt=" " width="100% "></a>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
         </section>
+        <!-- END SECTION -->
 
+        <!-- SECTION CONTATO -->
+        <section id="con">
+            <h2 class="stu">Contato</h2><br>
+            <div class="oito">
 
+                <div class="tre">
 
+                    <div class="contato">
+                        <p>Email: gugugacasco@gmail.com</p>
+                        <p>Telefone: (11) 97697-9198</p>
+                        <p>Localização: Vila Matilde, Zona Leste, São Paulo</p>
+                    </div>
 
+                    <div class="redes">
+                        <div class="rd">
+                            <li class="githbuf"><a href="https://github.com/GustavoCasco" target="_Blank" title="github"><i class="fabri fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/gustavo-casco/" target="_Blank" title="linkedin"><i class="fabri fa-linkedin"></i></a></li>
+                        </div>
+                        <div class="button-cv-a">
+                            <a href="../cv/currículo Gustavo Casco.pdf" download="" class="button-cv">Download CV</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-
 </body>
 
 </html>
