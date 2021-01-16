@@ -15,8 +15,8 @@
 <body>
     <header>
         <nav>
-            <div class="pint">
-                <ul class="header">
+            <!-- <div id="mypint" class="pint">
+                <ul id="myheader" class="header">
                     <a href="#conhecimento">
                         <li className="menu-link">Home</li>
                     </a>
@@ -33,11 +33,50 @@
                     <a href="#projeto">
                         <li className="menu-link">Contato</li>
                     </a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </a>
                 </ul>
                 <section id="banner">
 
                     <h1 class="name">Gustavo Casco Zacharias</h1>
                     <p class="area"> Desenvolvedor Júnior</p>
+                </section>
+            </div>
+        </nav> -->
+
+            <div class="bg-img">
+                <div class="topnav" id="myTopnav">
+                    <div id="lg">
+                        <div class="lai">
+                            <a href="#conhecimento">
+                                Home
+                            </a>
+                            <a href="#sobre">
+                               Quem sou
+                            </a>
+                            <a href="#conhecimento">
+                                Skills
+                            </a>
+                            <a href="#projeto">
+                                Projetos
+                            </a>
+                            <a href="#projeto">
+                                Contato
+                            </a>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <section id="banner">
+                    <h1 class="name">Gustavo Casco Zacharias</h1>
+                    <p class="area"> Desenvolvedor Júnior</p>
+                    <div class="rd">
+                        <a class="githbuf" href="https://github.com/GustavoCasco" target="_Blank" title="github"><i class="fabri fa-github"></i></a>
+                        <a class="githbuf" href="https://www.linkedin.com/in/gustavo-casco/" target="_Blank" title="linkedin"><i class="fabri fa-linkedin"></i></a>
+                    </div>
                 </section>
             </div>
         </nav>
@@ -47,7 +86,8 @@
 
         <!-- section que contem informações e style de sobre nós -->
         <section class="coloring">
-            <h2 id="sobre">Sobre </h2>
+            <h5 id="sobre">Quem sou </h5>
+            <h1 class="pouco">Um pouco sobre mim...</h1>
             <div class="ali">
                 <img class="guga" src="../img/guga.png" alt="">
                 <p class="rest">
@@ -161,7 +201,7 @@
                         <div class="hs"><br>
                             <p class="pi carddata22">2020</p>
                         </div><br>
-                        <div class="cool">
+                        <div class="cool30">
                             <p class="rest">
                                 Projeto academico conclusivo, o intuito do site era automatizar e aumentar a empregabilidade do senai, aonde é possivel a empresa divulgar vaga e o candidato se inscrever. Para essa aplicação foi utilizado ReactJs, ReactNative, Api REST FULL(c#), SQL
                                 SERVER.
@@ -176,31 +216,74 @@
 
         <!-- SECTION CONTATO -->
         <section id="con">
-            <h2 class="stu">Contato</h2><br>
-            <div class="oito">
+            <h2 class="contatc">Contato</h2>
+            <div class="contato">
+                <div class="aven">
+                    <i class="fabs fa-envelope"></i>
+                    <h4 class="spac">Envie um E-mail</h4>
+                    <p>gugugacasco007@gmail.com</p>
+                </div>
+                <div class="aven">
+                    <i class="fabs fa-phone-alt"></i>
+                    <H4 class="spac">Contate-me via telefone</H4>
+                    <p>(11) 97697-9198</p>
+                </div>
+                <div class="aven">
+                    <i class="fabs fa-map-marker-alt"></i>
+                    <h4 class="spac">De onde sou</h4>
+                    <p>Vila Matilde, Zona Leste, São Paulo</p>
+                </div>
 
-                <div class="tre">
+            </div>
 
-                    <div class="contato">
-                        <p>Email: gugugacasco@gmail.com</p>
-                        <p>Telefone: (11) 97697-9198</p>
-                        <p>Localização: Vila Matilde, Zona Leste, São Paulo</p>
-                    </div>
+            <div class="redes">
+                <div class="button-cv-a">
+                    <a href="../cv/currículo Gustavo Casco.pdf" download="" class="button-cv">Download CV</a>
 
-                    <div class="redes">
-                        <div class="rd">
-                            <li class="githbuf"><a href="https://github.com/GustavoCasco" target="_Blank" title="github"><i class="fabri fa-github"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/gustavo-casco/" target="_Blank" title="linkedin"><i class="fabri fa-linkedin"></i></a></li>
-                        </div>
-                        <div class="button-cv-a">
-                            <a href="../cv/currículo Gustavo Casco.pdf" download="" class="button-cv">Download CV</a>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+
+            ul.classList.toggle("mobile-mode");
+
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+
+                icon.classList.add("fas");
+
+            } else {
+                icon.classList.remove("fas");
+
+
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+
+        }
+    </script>
 </body>
 
 </html>
