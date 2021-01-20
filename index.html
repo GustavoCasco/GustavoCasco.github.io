@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Casco</title>
-    <link rel="stylesheet" href="../CSS/stylehome.css">
+    <link rel="stylesheet" href="CSS/stylehome.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -15,61 +15,33 @@
 <body>
     <header>
         <nav>
-            <!-- <div id="mypint" class="pint">
-                <ul id="myheader" class="header">
-                    <a href="#conhecimento">
-                        <li className="menu-link">Home</li>
-                    </a>
-
-                    <a href="#sobre">
-                        <li className="menu-link">Quem sou</li>
-                    </a>
-                    <a href="#conhecimento">
-                        <li className="menu-link">Skills</li>
-                    </a>
-                    <a href="#projeto">
-                        <li className="menu-link">Projetos</li>
-                    </a>
-                    <a href="#projeto">
-                        <li className="menu-link">Contato</li>
-                    </a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars fa-2x"></i>
-                    </a>
-                </ul>
-                <section id="banner">
-
-                    <h1 class="name">Gustavo Casco Zacharias</h1>
-                    <p class="area"> Desenvolvedor Júnior</p>
-                </section>
-            </div>
-        </nav> -->
-
             <div class="bg-img">
                 <div class="topnav" id="myTopnav">
-                    <div id="lg">
-                        <div class="lai">
-                            <a class="mas" href="#">
-                                Home
-                            </a>
-                            <a href="#sobre">
+                    <a href="">
+                        <img src="img/logo.png" alt="" style="width: 6em">
+                    </a>
+                    <div class="lai">
+                        <a href="">
+                    Home
+                        </a>
+                        <a href="#sobre">
                                Quem sou
                             </a>
-                            <a href="#conhe">
+                        <a href="#conhe">
                                 Skills
                             </a>
-                            <a href="#portf">
+                        <a href="#portf">
                                 Projetos
                             </a>
-                            <a href="#con">
+                        <a href="#con">
                                 Contato
                             </a>
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                <i class="fa fa-bars fa-2x"></i>
-                            </a>
-                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </a>
                     </div>
                 </div>
+
                 <section id="banner">
                     <h1 class="name">Gustavo Casco Zacharias</h1>
                     <p class="area"> Desenvolvedor Júnior</p>
@@ -87,10 +59,10 @@
         <!-- section que contem informações e style de sobre nós -->
         <section class="coloring">
             <h5 id="sobre">Quem sou </h5>
-            <h1 class="pouco">Um pouco sobre mim...</h1>
+            <h1 class="pouco titleee">Um pouco sobre mim...</h1>
             <div class="ali">
-                <img class="guga" src="../img/guga.png" alt="">
-                <p class="rest">
+                <img class="guga" src="img/guga.png" alt="">
+                <p class="rest var">
                     Meu nome é Gustavo Casco Zacharias, tenho 19 anos, atualmente recém-formado na instituição escola SENAI de informatica no curso de técnico em desenvolvimento de sistemas. Busco oportunidade para ingressar no ramo da tecnlogia como desenvolvedor web/mobile.
                     Gosto de experimentar coisas novas, lido bem com desafios e trabalho sub pressão. Nas horas vagas gosto de jogar futebol competindo ou então com os amigos, curto jogar jogos (como: fifa, call of duty, fortnite e etc.), me aprofundar
                     mais em conhecimento que envolve bolsa de valores e também me lido muito bem quando o assunto é cozinhar, talvez um dos hobbies mais prazeroso que tenho.
@@ -159,7 +131,7 @@
             </div>
             <div class="soft">
                 <div class="mb">
-                    <h2 class="comport">habilidades comportamentais</h2>
+                    <h2 class="comport">Habilidades comportamentais</h2>
                     <p class="softskills">Possuo qualificações como: Proatividade, boa comunicação, trabalho em equipe, apaixonado por encontrar soluções para os problemas, criatividade, empatia</p>
 
                 </div>
@@ -168,37 +140,48 @@
         <!-- END SECTTION -->
 
 
-        <!-- start project -->
+
         <section id="portf" class="project">
             <h5 id="sobre">Portfólio</h5>
             <h1 class="pouco"> Projetos</h1>
-            <div class="coluna">
-                <div class="pad"><br>
-                    <p class="pi carddata">2019</p><br>
-                    <div class="cool">
-                        <a target="_blank" href="https://github.com/GustavoCasco/Senai---Desenvolvimento-de-sistemas/tree/main/1%C2%B0%20Semestre/RoletopMVC"><img id="2019" class="img" src="../img/roletop.PNG " alt=" " width="100% "></a>
-                        <p class="rest">
+            <div class="portfolio">
+                <div class="tili">
+                    <!-- divisao para incluir o ano que foi feito o projeto -->
+                    <div class=""><br>
+                        <p class="ano">2019</p>
+                    </div><br>
+                    <!-- end div -->
+
+                    <!-- div feita para inclusao do link do repositorio e a imagem principal do projeto juntamente com uma breve descrição -->
+                    <div class="projetos">
+                        <a target="_blank" href="https://github.com/GustavoCasco/Senai---Desenvolvimento-de-sistemas/tree/main/1%C2%B0%20Semestre/RoletopMVC"><img id="2019" class="ROLE" src="img/roletop.PNG " alt=" " width="100% "></a><br>
+                        <br>
+                        <p class="rest iq">
                             Primeiro projeto acadêmico realizado junto com a instituição escola SENAI de informatica, onde foi utlizado o ASP.NET MVC com armazenamento local através do CSV. O objeto do projeto foi automatizar o agendamento de eventos.
                         </p>
-                    </div>
-                </div><br>
 
-                <div class="as">
-                    <div class="hebert">
-                        <div class="hs"><br>
-                            <p class="pi carddata22">2020</p>
-                        </div><br>
-                        <div class="cool30">
-                            <p class="rest">
-                                Projeto acadêmico conclusivo, o intuito do site era automatizar e aumentar a empregabilidade do senai, aonde é possivel a empresa divulgar vaga e o candidato se inscrever. Para essa aplicação foi utilizado ReactJs, ReactNative, API REST FULL(C#), SQL
-                                SERVER.
-                            </p>
-                            <a href="https://github.com/GustavoCasco/Projeto-Conclusivo-Senai"><img class="img22" src="../img/ProVagas.PNG" alt=" " width="100% "></a>
-                        </div>
+                    </div>
+                    <!-- end div -->
+                </div>
+            </div>
+
+            <div class="portfolio">
+                <div class="end">
+                    <div class="ano1"><br>
+                        <p class="ano">2020</p>
+                    </div><br>
+                    <div class="projetos cool30">
+                        <p class="rest iq">
+                            Projeto acadêmico conclusivo, o intuito do site era automatizar e aumentar a empregabilidade do senai, aonde é possivel a empresa divulgar vaga e o candidato se inscrever. Para essa aplicação foi utilizado ReactJs, ReactNative, API REST FULL(C#), SQL
+                            SERVER.
+                        </p><br>
+                        <a href="https://github.com/GustavoCasco/Projeto-Conclusivo-Senai"><img class="img22" src="img/ProVagas.PNG" alt=" " width="100% "></a>
                     </div>
                 </div><br>
             </div>
         </section>
+        <!-- start project -->
+
         <!-- END SECTION -->
 
         <!-- SECTION CONTATO -->
@@ -219,15 +202,14 @@
                 <div class="aven">
                     <i class="fabs fa-map-marker-alt"></i>
                     <h4 class="spac">De onde sou</h4>
-                    <p>Vila Matilde, Zona Leste, São Paulo</p>
+                    <p>São Paulo, Zona Leste</p>
                 </div>
 
             </div>
 
             <div class="redes">
                 <div class="button-cv-a">
-                    <a href="../cv/currículo Gustavo Casco.pdf" download="" class="button-cv">Download CV</a>
-
+                    <a href="../cv/Curriculo-GustavoCasco.pdf" class="button-cv" download>Download CV</a>
                 </div>
             </div>
         </section>
@@ -240,6 +222,24 @@
                 x.className += " responsive";
             } else {
                 x.className = "topnav";
+            }
+        }
+    </script>
+    <script>
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("myTopnav").style.backgroundColor = "#000";
+                document.getElementById("topnav responsive").style.padding = "0";
+                document.getElementById("myTopnav").style.padding = "15px 10px";
+
+            } else {
+                document.getElementById("myTopnav").style.backgroundColor = "#0001"
+                document.getElementById("topnav responsive").style.padding = "0";
+
             }
         }
     </script>
